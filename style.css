@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box; /* when we add any border or padding to an element it won't affect it's width */
+}
+
+body {
+  color: rgb(0, 125, 129);
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(36, 90, 83),
+    #fff,
+    rgb(4, 16, 17)
+  );
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 4rem 0 4rem 0;
+}
+
+.container img {
+  object-fit: cover;
+  margin: 10px;
+  height: 300px;
+  width: 300px;
+  max-width: 100%;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
+}
